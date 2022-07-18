@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    Animator animator;
     Rigidbody2D rigidbody2d;
     float horizontal;
     public float speed = 3.0f;
@@ -21,6 +22,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        animator.SetFloat("Move X", horizontal);
+        animator.SetFloat("Moving", horizontal);
         Vector2 position = rigidbody2d.position;
         position.x = position.x + speed * horizontal * Time.deltaTime;
 
