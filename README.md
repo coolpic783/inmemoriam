@@ -15,3 +15,4 @@ to edit a project and sync it with the repository:
 COLLABORATORS ONLY:
 https://drive.google.com/drive/folders/1_yYCZPOhv1ZpeH6DettPCCDtn2qj1Zvw?usp=sharing
 use the google drive link to put your assets that you make
+NOTE: Don't change the editor version, it messes with shtuff 
