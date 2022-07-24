@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Animator animator;
+    public Animator animator;
     Rigidbody2D rigidbody2d;
     float horizontal;
+    float moveDirection = 1;
+    float isMoving = 0;
     public float speed = 3.0f;
     // Start is called before the first frame update
     void Start()
     {
+        animator.SetFloat("Move X", 1);
+        animator.SetFloat("Moving", 0);
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
@@ -22,8 +26,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        animator.SetFloat("Move X", horizontal);
-        animator.SetFloat("Moving", horizontal);
+        if (horizontal != 0)
+        {
+            moveDirection = horizontal;
+            isMoving = 1;
+        }
+        else
+        {
+            isMoving = 0;
+        }
+        animator.SetFloat("Move X", moveDirection);
+        animator.SetFloat("Moving", isMoving);
         Vector2 position = rigidbody2d.position;
         position.x = position.x + speed * horizontal * Time.deltaTime;
 
