@@ -7,10 +7,13 @@ public class PrologueEventManager : MonoBehaviour
 {
     public GameObject[] cameraList; //creates a list of camera gameobjects - that is, the opening cutscene camera and the player camera 
     public GameObject BlackOutSquare;
+    public GameObject UnFade;
+    public GameObject RealPlayer;
     // Start is called before the first frame update, Awake is called as soon as possible
     void Awake()
     {
         SetActiveCamera(0);
+        RealPlayer.SetActive(false);
     }
 
     void Start()
@@ -24,7 +27,7 @@ public class PrologueEventManager : MonoBehaviour
         
     }
 
-    public IEnumerator FadeBlackOutSquare(bool fadeToBlack = true, int fadeSpeed = 5)
+    public IEnumerator FadeBlackOutSquare(bool fadeToBlack, int fadeSpeed)
     {
         Color objectColor = BlackOutSquare.GetComponent<Image>().color;
         float fadeAmount;
@@ -37,7 +40,7 @@ public class PrologueEventManager : MonoBehaviour
 
                 objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
                 BlackOutSquare.GetComponent<Image>().color = objectColor;
-                yield return null;
+                yield return new WaitForSecondsRealtime(2);
             }
         }
         else
@@ -53,7 +56,7 @@ public class PrologueEventManager : MonoBehaviour
         }
     }
 
-    void SetActiveCamera(int camNum)
+    public void SetActiveCamera(int camNum)
     {
         //switches which camera in the list is active
         for (int i = 0; i < cameraList.Length; i++)
