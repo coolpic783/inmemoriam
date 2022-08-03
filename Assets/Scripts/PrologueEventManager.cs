@@ -8,11 +8,14 @@ public class PrologueEventManager : MonoBehaviour
     public GameObject[] cameraList; //creates a list of camera gameobjects - that is, the opening cutscene camera and the player camera 
     public GameObject BlackOutSquare;
     public GameObject RealPlayer;
+    public GameObject PlayerDummy;
+    public PlayerController pc;
+    public GameObject Spotlight;
     // Start is called before the first frame update, Awake is called as soon as possible
     void Awake()
     {
         SetActiveCamera(0);
-        RealPlayer.SetActive(false);
+        pc = RealPlayer.GetComponent<PlayerController>();
     }
 
     void Start()
@@ -24,6 +27,16 @@ public class PrologueEventManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void DisablePlayerDummy()
+    {
+        PlayerDummy.SetActive(false);
+        Destroy(Spotlight);
+    }
+    public void EnablePlayer()
+    {
+        pc.isActive = true;
     }
 
     public void SetActiveCamera(int camNum)

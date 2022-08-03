@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6542447828967688601}
   - component: {fileID: 6542447828967688600}
-  - component: {fileID: 7426271690817189803}
   - component: {fileID: 6762726594252882943}
   m_Layer: 0
   m_Name: FadeSquare
@@ -84,18 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!225 &7426271690817189803
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6542447828967688603}
-  m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!95 &6762726594252882943
 Animator:
   serializedVersion: 3

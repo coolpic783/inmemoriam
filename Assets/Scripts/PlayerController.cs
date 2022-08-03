@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     float moveDirection = 1;
     float isMoving = 0;
     public float speed = 3.0f;
+    public bool isActive = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,20 +27,23 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (horizontal != 0)
+        if (isActive)
         {
-            moveDirection = horizontal;
-            isMoving = 1;
-        }
-        else
-        {
-            isMoving = 0;
-        }
-        animator.SetFloat("Move X", moveDirection);
-        animator.SetFloat("Moving", isMoving);
-        Vector2 position = rigidbody2d.position;
-        position.x = position.x + speed * horizontal * Time.deltaTime;
+            if (horizontal != 0)
+            {
+                moveDirection = horizontal;
+                isMoving = 1;
+            }
+            else
+            {
+                isMoving = 0;
+            }
+            animator.SetFloat("Move X", moveDirection);
+            animator.SetFloat("Moving", isMoving);
+            Vector2 position = rigidbody2d.position;
+            position.x = position.x + speed * horizontal * Time.deltaTime;
 
-        rigidbody2d.MovePosition(position);
+            rigidbody2d.MovePosition(position);
+        }
     }
 }
