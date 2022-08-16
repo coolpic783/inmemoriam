@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ShowCredits : MonoBehaviour
 {
@@ -26,6 +27,6 @@ public class ShowCredits : MonoBehaviour
 
     public void EnterCreditsScene()
     {
-
+        SceneManager.LoadScene(1);
     }
 }

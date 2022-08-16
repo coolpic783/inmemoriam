@@ -30,7 +30,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 22.55
+        time: 89.76667
         value: 0
         inSlope: 0
         outSlope: 0
@@ -50,15 +50,15 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -577.1
-        inSlope: 171.08116
-        outSlope: 171.08116
+        value: -755.7698
+        inSlope: 46.373096
+        outSlope: 46.373096
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.18688524
+        outWeight: 0.15737705
       - serializedVersion: 3
-        time: 22.55
+        time: 89.76667
         value: 2877.183
         inSlope: 21.229856
         outSlope: 21.229856
@@ -74,7 +74,7 @@ AnimationClip:
     classID: 224
     script: {fileID: 0}
   m_PPtrCurves: []
-  m_SampleRate: 60
+  m_SampleRate: 30
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -101,7 +101,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 22.55
+    m_StopTime: 89.76667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -130,7 +130,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 22.55
+        time: 89.76667
         value: 0
         inSlope: 0
         outSlope: 0
@@ -150,15 +150,15 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -577.1
-        inSlope: 171.08116
-        outSlope: 171.08116
+        value: -755.7698
+        inSlope: 46.373096
+        outSlope: 46.373096
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.18688524
+        outWeight: 0.15737705
       - serializedVersion: 3
-        time: 22.55
+        time: 89.76667
         value: 2877.183
         inSlope: 21.229856
         outSlope: 21.229856
