@@ -17,7 +17,7 @@ public class gravestonetriggermanager : MonoBehaviour
 
     void OnTriggerEnter2D(playerbc)
     {
-        Debug.Log("gravestone cutscene triggered.")
+        Debug.Log("gravestone cutscene triggered.");
         
     }
 }
