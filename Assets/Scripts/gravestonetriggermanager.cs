@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class gravestonetriggermanager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        public GameObject gravestone;
-        public GameObject playerKneel;
-        public GameObject player;
-        
-        BoxCollider2d gravebc = gravestone.GetComponent<BoxCollider2d>();
-        BoxCollider2d playerbc = player.GetComponent<BoxCollider2d>();
-    }
 
-    void OnTriggerEnter2D(playerbc)
-    {
-        Debug.Log("gravestone cutscene triggered.");
-        
-    }
+    public static GameObject gravestone;
+    public static GameObject playerKneel;
+    public static GameObject player;
+
+    BoxCollider2D gravebc = gravestone.GetComponent<BoxCollider2D>();
+    BoxCollider2D playerbc = player.GetComponent<BoxCollider2D>();
+
+    void OnTriggerEnter2D(BoxCollider2D playerbc)
+{
+    Debug.Log("gravestone cutscene triggered.");
+
+}
 }
