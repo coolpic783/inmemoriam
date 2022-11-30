@@ -6735,5 +6735,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gravestone
       objectReference: {fileID: 0}
+    - target: {fileID: 2362476286806640354, guid: 0e67142308cf6bd4ca233e4ca2d7218c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1223137172}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e67142308cf6bd4ca233e4ca2d7218c, type: 3}

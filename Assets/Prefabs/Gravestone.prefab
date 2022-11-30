@@ -149,3 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8677ca49cf401cf43adcd514c318e37d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gravestone: {fileID: 2173580477625053340}
+  playerKneel: {fileID: 8707333129947890827, guid: 92e341bae69921d4ea422a98d9b1a148, type: 3}
+  player: {fileID: 0}
