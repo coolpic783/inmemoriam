@@ -21,7 +21,7 @@ public class gravestonetriggermanager : MonoBehaviour
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 
-    void OnTriggerStay2D(BoxCollider2D playerbc)
+    void OnTriggerStay2D(Collider2D playerbc)
     {
         if (CutsceneNotTriggered)
         {
