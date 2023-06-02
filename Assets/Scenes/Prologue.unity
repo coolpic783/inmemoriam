@@ -7079,5 +7079,41 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1223137172}
+    - target: {fileID: 2362476286806640354, guid: 0e67142308cf6bd4ca233e4ca2d7218c, type: 3}
+      propertyPath: dialogue.name
+      value: YOU
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362476286806640354, guid: 0e67142308cf6bd4ca233e4ca2d7218c, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362476286806640354, guid: 0e67142308cf6bd4ca233e4ca2d7218c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Is this...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362476286806640354, guid: 0e67142308cf6bd4ca233e4ca2d7218c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: W-who...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362476286806640354, guid: 0e67142308cf6bd4ca233e4ca2d7218c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Does this mean...?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362476286806640354, guid: 0e67142308cf6bd4ca233e4ca2d7218c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: Dead...?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362476286806640354, guid: 0e67142308cf6bd4ca233e4ca2d7218c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: Who... who am... who was I?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362476286806640354, guid: 0e67142308cf6bd4ca233e4ca2d7218c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[5]
+      value: Could you help me?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2362476286806640354, guid: 0e67142308cf6bd4ca233e4ca2d7218c, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: Where do I start?
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e67142308cf6bd4ca233e4ca2d7218c, type: 3}
