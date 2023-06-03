@@ -25,7 +25,7 @@ public class gravestonetriggermanager : MonoBehaviour
     {
         if (CutsceneNotTriggered)
         {
-            if (Input.GetKeyDown("E"))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("gravestone cutscene triggered.");
 
